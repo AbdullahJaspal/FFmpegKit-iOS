@@ -9,6 +9,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/AbdullahJaspal/FFmpegKit-iOS.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.1'
   s.vendored_frameworks = 'Frameworks/*.framework'
+  s.source_files = 'Frameworks/ffmpegkit.framework/Headers/*.h'
+  s.public_header_files = 'Frameworks/ffmpegkit.framework/Headers/*.h'
   s.libraries = 'z'
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CoreMedia', 'VideoToolbox'
 end
